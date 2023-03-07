@@ -8,9 +8,12 @@ import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
+    // ctrl + shift + t 단축키 test 생성 ===> test>java>hello.hellospring>service>MemberServiceTest
+    private final MemberRepository memberRepository;
 
-    private final MemberRepository memberRepository = new MemoryMemeberRepository();
-
+    public MemberService(MemberRepository memberRepository){
+        this.memberRepository = memberRepository;
+    }
 
     /*
     *  회원 가입
