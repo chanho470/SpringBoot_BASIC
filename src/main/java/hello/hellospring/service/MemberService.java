@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+//@Service
 public class MemberService {
     // ctrl + shift + t 단축키 test 생성 ===> test>java>hello.hellospring>service>MemberServiceTest
     private final MemberRepository memberRepository;
 
-    @Autowired
+    //@Autowired
     public MemberService(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }
