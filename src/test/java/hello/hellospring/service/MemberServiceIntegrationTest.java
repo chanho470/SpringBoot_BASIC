@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 * */
 @SpringBootTest // 스프링 컨테이너와 테스트를 함께 실행한다.
 @Transactional //테스트 케이스에 Transactional 어노테이션이 있으면 트렌젝션을 먼저 실행하고 테스트가 종료 되면 롤백해 DB에 넣었던 데이터가 반영이 안된다
-                // 다음 테스트 반복 가능하다. 테스트 메서드 마다 실행함 
+                // 다음 테스트 반복 가능하다. 테스트 메서드 마다 실행함
 class MemberServiceIntegrationTest {
     @Autowired
     MemberService memberService;
