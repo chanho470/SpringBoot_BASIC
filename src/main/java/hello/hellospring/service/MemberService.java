@@ -6,11 +6,13 @@ import hello.hellospring.repository.MemoryMemeberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 //@Service
+@Transactional //데이터를 저장 변경할 때 필요하다.
 public class MemberService {
     // ctrl + shift + t 단축키 test 생성 ===> test>java>hello.hellospring>service>MemberServiceTest
     private final MemberRepository memberRepository;
