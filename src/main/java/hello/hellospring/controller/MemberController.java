@@ -18,6 +18,7 @@ public class MemberController {
     @Autowired //컨트롤러와 서비스를 연결해준다
     public MemberController(MemberService memberService){
         this.memberService = memberService;
+        System.out.println("member"+memberService.getClass());
     }
 
 
