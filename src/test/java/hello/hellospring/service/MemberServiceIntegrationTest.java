@@ -33,7 +33,7 @@ class MemberServiceIntegrationTest {
     void join_회원가입() {
         //given
         Member member = new Member();
-        member.setName("test 초");
+        member.setName("test 초w");
         //when
         Long saveId = memberService.join(member);
         //then

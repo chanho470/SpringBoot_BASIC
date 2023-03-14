@@ -23,7 +23,7 @@ public class MemoryMemberRepositoryTest {
         member.setName("spring");
 
         repository.save(member);
-        Member result  = repository.findByID(member.getId()).get(); // 반환 타입이 optional 로 get으로 값을 꺼냄
+        Member result  = repository.findById(member.getId()).get(); // 반환 타입이 optional 로 get으로 값을 꺼냄
         System.out.println("result  = " + (result == member)); // result = true
 
         // 콘솔 창을 이용해 결과 값이 참임을 확인할 수 있지만, Assertions으로 케이스의 값을 검증할 수 있다.
